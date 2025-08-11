@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark light" />
+    <title>cuteness — bio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Background sakura and glow layers -->
+    <div class="bg" aria-hidden="true">
+      <div class="bg-image"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+      <div id="sakura"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container hdr">
+        <a href="#" id="brandLink" class="brand-link">bio.cutenessdev.fun</a>
+        <div class="controls">
+          <select id="langSelectBio" class="ctrl-select" aria-label="Language">
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+            <option value="ja">日本語</option>
+          </select>
+          <button id="supportBtn" class="btn small primary" type="button">Поддержать</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <img class="avatar" src="avatar.jpg" alt="avatar" loading="lazy" />
+        <h1 class="title">cuteness</h1>
+        <div class="deep-link hero-deeplink">
+          <a href="https://t.me/whywatashidead" rel="noopener noreferrer" target="_blank">1000001101110001001110100001100011000011101110001001110100000100000101101000011000010001000001100001111001000011100010000111101101110</a>
+        </div>
+      </section>
+
+      <section class="info-box panel">
+        <div class="info-table" id="infoTable"></div>
+        <div class="actions">
+          <a class="btn primary" id="githubLink" href="https://github.com/imcuteness" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn ghost" id="tgLink" href="https://t.me/canfeelonlypain" target="_blank" rel="noopener">Telegram</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>© 2025 cuteness</span>
+        <span>I use arch btw</span>
+      </div>
+    </footer>
+
+    <!-- Chibi overlay (easter egg) -->
+    <div id="chibi" class="chibi" hidden>(≧◡≦) ♡</div>
+
+    <!-- Support modal -->
+    <div id="supportModal" class="modal" hidden>
+      <div class="modal__backdrop" data-close></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+        <div class="modal__header">
+          <h3 id="supportTitle">Поддержать</h3>
+          <button class="modal__close" type="button" data-close>✕</button>
+        </div>
+        <div class="modal__body">
+          <div class="copy-row">
+            <div class="copy-label">The Open Network</div>
+            <div class="copy-value" id="tonAddr">UQACWtLBch1eicsZQp5p6c7bI792lejJbMPlLoQeJecZDfzl</div>
+            <button class="copy-btn" data-copy="#tonAddr">Copy</button>
+          </div>
+          <div class="copy-row">
+            <div class="copy-label">Card</div>
+            <div class="copy-value" id="cardNum">5599002101693895</div>
+            <button class="copy-btn" data-copy="#cardNum">Copy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
+
+
